@@ -13,14 +13,20 @@ int main(void)
 {
 	char asciiLetter;
 
-	asciiLetter = 97;
-
-	while (asciiLetter < 123)
-	{
+	for (asciiLetter = 97 ; asciiLetter <= 122; asciiLetter++)
+		if (asciiLetter == 101)
+		{
+			continue;
+		}
+		else if (asciiLetter == 113)
+		{
+			continue;
+		}
+		else
+		{
 		putchar(asciiLetter);
-		asciiLetter = asciiLetter + 1;
-	}
-		putchar('\n');
+		}
+putchar('\n');
 
 return (0);
 }
