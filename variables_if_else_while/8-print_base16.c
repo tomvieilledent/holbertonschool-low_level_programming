@@ -19,7 +19,7 @@ int main(void)
 }
 	asciiLetter = 64;
 
-	for (asciiLetter = 97; asciiLetter <= 101; asciiLetter++)
+	for (asciiLetter = 97; asciiLetter <= 102; asciiLetter++)
 {
 	putchar(asciiLetter);
 }
