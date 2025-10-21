@@ -18,10 +18,9 @@ int main(void)
 	while (asciiLetter < 123)
 	{
 		putchar(asciiLetter);
-		putchar('\n');
 		asciiLetter = asciiLetter + 1;
 	}
-/* tant que lettre =/ z, lettre=lettre+1*/
+		putchar('\n');
 
 return (0);
 }
