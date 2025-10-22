@@ -1,3 +1,4 @@
 .DS_Store
 prog
 _putchar.c
+*main.c
