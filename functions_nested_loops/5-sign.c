@@ -1,11 +1,15 @@
 #include "main.h"
 
 /**
- * _isalpha - Checks if a character is an alpha
- * @c: The character to check (ASCII value)
+ * print_sign - prints the sign of a number
+ * @n: the number to check
  *
- * Return: 1 if c is an alpha, 0 otherwise
+ * This function prints '+' if n is positive, '0' if n is zero,
+ * and '-' if n is negative.
+ *
+ * Return: 1 if n is positive, 0 if n is zero, -1 if n is negative
  */
+
 int print_sign(int n)
 
 {
@@ -16,7 +20,7 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		_putchar('O');
+		_putchar('0');
 		return (0);
 	}
 	else
