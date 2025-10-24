@@ -30,12 +30,12 @@ void times_table(void)
 				t = n1 * n2;
 				_putchar(',');
 				_putchar(' ');
-				if (t > 10)
+				if (t >= 10)
 				{
 					_putchar(t / 10 + '0');
 					_putchar(t % 10 + '0');
 				}
-				if (t <= 10)
+				if (t < 10)
 				{
 					_putchar(' ');
 					_putchar(t % 10 + '0');
