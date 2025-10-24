@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * times_table - prints every minute from 00:00 to 23:59
