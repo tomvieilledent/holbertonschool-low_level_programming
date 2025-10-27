@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
- * print_square : draw a square
- * @size: The size of square
- * @l: The number of lines
- * @c: The number of columns
+ * print_square - Draws a square using the character '#'
+ * @size: The size of the square
+ *
+ * Description: Prints a square of '#' characters of a given size.
+ * If size is 0 or less, only a new line is printed.
+ * Uses _putchar function to print characters.
  */
 
 void print_square(int size)
