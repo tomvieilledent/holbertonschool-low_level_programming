@@ -1,10 +1,16 @@
 #include "main.h"
 
 
+
 /**
- * _strlen - Returns the length of a string.
- * @s: Pointer to the string.
- * Return: The length of the string.
+ * _puts - Prints a string, followed by a new line, to stdout.
+ * @str: Pointer to the string to print.
+ *
+ * Description: This function prints each character of the string
+ *              one by one using the _putchar function, and then
+ *              prints a newline character at the end.
+ *
+ * Return: Nothing (void).
  */
 
 void _puts(char *str)
