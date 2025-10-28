@@ -23,6 +23,8 @@ void print_rev(char *s)
 		s++;
 		t++;
 	}
+	s--;
+	t--;
 	while (t >= 0)
 	{
 		_putchar(*s);
