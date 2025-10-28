@@ -2,13 +2,17 @@
 
 
 
+
+
 /**
- * _puts - Prints a string, followed by a new line, to stdout.
- * @str: Pointer to the string to print.
+ * print_rev - Prints a string in reverse, followed by a new line.
+ * @s: Pointer to the string to be reversed and printed.
  *
- * Description: This function prints each character of the string
- *              one by one using the _putchar function, and then
- *              prints a newline character at the end.
+ * Description: This function prints the characters of a string
+ *              in reverse order using the _putchar function.
+ *              It first iterates through the string to find its end,
+ *              then prints each character backward until the start
+ *              of the string is reached. Finally, it prints a new line.
  *
  * Return: Nothing (void).
  */
