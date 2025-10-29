@@ -16,22 +16,30 @@
 void puts_half(char *str)
 
 {
-int len = 0, c = 0;
+int len = 0, c;
 
-while (str[len] != '\0') /*défini longueur  string*/
+while (str[len] != '\0')
 {
 	len++;
 }
-len--;
-if (len % 2 == 0) /*si len pair*/
-	for (c = len / 2; c <= len; c++)
+if (len % 2 == 0)
+{
+	c = len / 2;
+	while (str[c] != '\0')
 	{
 		_putchar(str[c]);
+		c++;
 	}
-else /*si len impair*/
-	for (c = (len + 1) / 2; c <= len; c++)
+
+}
+else
+{
+	c = (len + 1) / 2;
+	while (str[c] != '\0')
 	{
 		_putchar(str[c]);
+		c++;
 	}
+}
 _putchar('\n');
 }
