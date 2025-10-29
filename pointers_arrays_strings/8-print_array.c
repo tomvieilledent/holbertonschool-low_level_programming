@@ -20,7 +20,7 @@ for (c = 0; c < n; c++)
 {
 	if (c < (n - 1))
 	{
-		printf("%d ,", a[c]);
+		printf("%d, ", a[c]);
 	}
 	else
 	{
