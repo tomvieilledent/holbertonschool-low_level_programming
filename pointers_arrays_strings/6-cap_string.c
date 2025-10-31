@@ -1,10 +1,16 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes all words of a string
- * @str: pointer to the string to convert
- * Return: pointer to the modified string
+ * cap_string - Capitalizes all words of a string.
+ * @str: Pointer to the string to be modified.
+ *
+ * Description: This function iterates through the input string and
+ * capitalizes the first letter of each word. Words are separated by
+ * spaces, tabs, newlines, and other specified delimiters.
+ *
+ * Return: Pointer to the modified string.
  */
+
 
 char *cap_string(char *str)
 {
@@ -12,16 +18,16 @@ char *cap_string(char *str)
 
 	while (str[i] != '\0')
 	{
-		if ((str[i - 1] == ' ' || str[i - 1] == '\t' ||
-			 str[i - 1] == '\n' || str[i - 1] == ',' || str[i - 1] == ';' ||
-			 str[i - 1] == '.' || str[i - 1] == '!' || str[i - 1] == '?' ||
-			 str[i - 1] == '"' || str[i - 1] == '(' || str[i - 1] == ')' ||
-			 str[i - 1] == '{' || str[i - 1] == '}') &&
-			(str[i] >= 'a' && str[i] <= 'z'))
-		{
-			str[i] -= ('a' - 'A');
-		}
-		i++;
+	if ((i == 0 || str[i - 1] == ' ' || str[i - 1] == '\t' ||
+	str[i - 1] == '\n' || str[i - 1] == ',' || str[i - 1] == ';' ||
+	str[i - 1] == '.' || str[i - 1] == '!' || str[i - 1] == '?' ||
+	str[i - 1] == '"' || str[i - 1] == '(' || str[i - 1] == ')' ||
+	str[i - 1] == '{' || str[i - 1] == '}') &&
+	(str[i] >= 'a' && str[i] <= 'z'))
+	{
+	str[i] -= ('a' - 'A');
 	}
-	return (str);
+	i++;
+	}
+return (str);
 }
