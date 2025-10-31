@@ -9,7 +9,7 @@
  *
  * Description: Copies up to n characters from the string @src
  * to the buffer @dest. If @src is shorter than n, the remaining
- * space is filled with null bytes ('\0'). Works like strncpy.
+ * space is filled with null bytes ('\0').
  *
  * Return: A pointer to the resulting string @dest
  */
