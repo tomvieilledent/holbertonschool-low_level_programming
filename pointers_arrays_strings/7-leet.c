@@ -1,33 +1,20 @@
-#include "main.h"
-
 /**
- * _strcat - Concatenates two strings.
- * @dest: Pointer to the destination string.
- * @src: Pointer to the source string to be appended.
+ * leet - Encodes a string into 1337.
+ * @str: The string to encode.
  *
- * Description: This function appends the contents of the string
- * pointed to by @src to the end of the string pointed to by @dest.
- * The terminating null byte ('\0') at the end of @dest is overwritten,
- * and a new null byte is added at the end of the resulting string.
- *
- * Return: A pointer to the resulting string @dest.
+ * Return: The encoded string.
  */
-
-char *_strcat(char *dest, char *src)
-
+char *leet(char *str)
 {
-	int i = 0, j = 0;
+	int i = 0;
 
-while (dest[i] != '\0')
-{
-	i++;
-}
-while (src[j] != '\0')
-{
-	dest[i] = src[j];
-	i++;
-	j++;
-}
-dest[i] = '\0';
-return (dest);
+	while (str[i] != '\0')
+	{
+		if (i % 2 == 0)
+		{
+			_putchar(str[i]);
+		}
+		i++;
+	}
+	_putchar('\n');
 }
