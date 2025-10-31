@@ -1,16 +1,14 @@
 #include "main.h"
 
 /**
- * reverse_array - Reverses the elements of an integer array in place
- * @a: Pointer to the first element of the array
- * @n: Number of elements in the array
+ * string_toupper - Converts all lowercase letters of a string to uppercase
+ * @a: Pointer to the string to be converted
  *
- * Description: This function reverses the order of elements in the
- *              integer array pointed to by @a. It swaps the first
- *              element with the last, the second with the second-to-last,
- *              and so on, until the entire array is reversed.
+ * Description: This function iterates through the string pointed to by @a
+ *              and converts all lowercase alphabetic characters to their
+ *              uppercase equivalents. The conversion is done in place.
  *
- * Return: Nothing (void)
+ * Return: Pointer to the modified string
  */
 
 char *string_toupper(char *a)
