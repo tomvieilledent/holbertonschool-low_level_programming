@@ -2,7 +2,7 @@
 
 /**
  * _strstr - Locates the first occurrence of a substring.
- * @s: Pointer to the string to be scanned.
+ * @haystack: Pointer to the string to be scanned.
  * @needle: Pointer to the string containing the characters to match.
  *
  * Description: This function scans the string pointed to by @s and
@@ -38,6 +38,5 @@ char *_strstr(char *haystack, char *needle)
 
 		i++;
 	}
-	return 0;
-return (0);
+	return (0);
 }
