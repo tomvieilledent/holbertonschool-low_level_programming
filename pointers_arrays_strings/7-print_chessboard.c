@@ -1,16 +1,11 @@
 #include "main.h"
 
 /**
- * _strstr - Locates a substring within a string.
- * @haystack: The string to search in.
- * @needle: The substring to search for.
+ * print_chessboard - Prints a chessboard.
+ * @a: A pointer to an 8x8 array representing the chessboard.
  *
- * This function searches for the first occurrence of the substring
- * @needle in the string @haystack. The terminating null bytes are
- * not compared.
- *
- * Return: Pointer to the beginning of the located substring,
- * or NULL if the substring is not found.
+ * This function prints the chessboard row by row, with each
+ * character followed by a newline at the end of each row.
  */
 
 void print_chessboard(char (*a)[8])
