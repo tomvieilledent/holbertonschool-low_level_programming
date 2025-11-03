@@ -3,15 +3,15 @@
 /**
  * _strstr - Locates the first occurrence of a substring.
  * @s: Pointer to the string to be scanned.
- * @accept: Pointer to the string containing the characters to match.
+ * @needle: Pointer to the string containing the characters to match.
  *
  * Description: This function scans the string pointed to by @s and
  * locates the first occurrence of any character from the string
  * pointed to by @accept. The search does not include the terminating
  * null byte ('\0') of either string.
  *
- * Return: A pointer to the first occurrence in @s of any character
- * from @accept, or NULL if no such character is found.
+ * Return: A pointer to the first occurrence of the substring @needle
+ * in @haystack, or NULL if the substring is not found.
  */
 
 char *_strstr(char *haystack, char *needle)
