@@ -2,16 +2,15 @@
 
 
 /**
- * _strspn - Gets the length of a prefix substring
- * @dest: The destination buffer
- * @src: The source string
- * @n: The maximum number of bytes to copy
+ * _strspn - gets the length of a prefix substring
+ * @s: pointer to the string to be searched
+ * @accept: pointer to the string containing the accepted characters
  *
- * Description: Copies up to n characters from the string @src
- * to the buffer @dest. If @src is shorter than n, the remaining
- * space is filled with null bytes ('\0').
+ * Description: This function calculates the number of bytes in the initial
+ * segment of @s which consist only of bytes from @accept.
  *
- * Return: A pointer to the resulting string @dest
+ * Return: the number of bytes in the initial segment of @s
+ * which consist only of bytes from @accept
  */
 
 unsigned int _strspn(char *s, char *accept)
