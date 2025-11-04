@@ -6,7 +6,6 @@
  * Description:
  * This function prints a string using recursion. Each character of the string
  * is printed one by one, followed by a new line at the end.
- * @return: void
  */
 
 void _puts_recursion(char *s)
