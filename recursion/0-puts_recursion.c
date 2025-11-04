@@ -2,12 +2,11 @@
 
 
 /**
- * File: 0-puts_recursion.c
- *
- * Description: This file contains the implementation of a function that prints
- * a string, followed by a new line, using recursion.
- *
- * Author: fitax
+ * _puts_recursion - Prints a string, followed by a new line.
+ * @s: Pointer to the string to be printed.
+ * Description:
+ * This function prints a string using recursion. Each character of the string
+ * is printed one by one, followed by a new line at the end.
  */
 
 void _puts_recursion(char *s)
