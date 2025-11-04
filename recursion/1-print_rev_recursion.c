@@ -5,7 +5,7 @@
  * @s: Pointer to the string to be printed.
  * Description:
  * This function prints a string using recursion. Each character of the string
- * is printed one by one, followed by a new line at the end.
+ * is printed in reverse order, followed by a new line at the end.
  */
 
 void _print_rev_recursion(char *s)
@@ -14,7 +14,8 @@ void _print_rev_recursion(char *s)
 	if (*s == '\0')
 	{
 		return;
-		return;
+		_putchar('\n');
+	}
 	else
 	{
 		_print_rev_recursion(s + 1);
