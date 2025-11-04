@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion - Prints a string in reverse.
- * @s: Pointer to the string to be printed.
+ * _strlen_recursion - Calculates the length of a string.
+ * @s: Pointer to the string whose length is to be calculated.
  * Description:
- * This function prints a string using recursion. Each character of the string
- * is printed in reverse order, followed by a new line at the end.
+ * This function calculates the length of a string using recursion. It returns
+ * the total number of characters in the string, excluding the null terminator.
  */
 
 int _strlen_recursion(char *s)
