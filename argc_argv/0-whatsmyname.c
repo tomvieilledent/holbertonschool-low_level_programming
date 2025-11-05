@@ -5,7 +5,8 @@
  *
  * Description: Prints the name of the program followed by a new line.
  * The program name is always the first argument (argv[0]).
- *
+ * @argc: argument count
+ * @argv: array of argument strings
  * Return: Always 0 (Success)
  */
 
