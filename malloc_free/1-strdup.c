@@ -18,16 +18,22 @@ char *_strdup(char *str)
 	int i;
 
 	if (str == NULL)
+	{
 		return (NULL);
+	}
 
 	while (str[len] != '\0')
+	{
 		len++;
+	}
 	len++;
 
 	cpy = malloc(sizeof(char) * len);
 
 	if (cpy == NULL)
+	{
 		return (NULL);
+	}
 
 	for (i = 0; i < len; i++)
 	{
