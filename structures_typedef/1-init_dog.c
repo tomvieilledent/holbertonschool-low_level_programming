@@ -1,9 +1,14 @@
 #include "dog.h"
 
 /**
- * is_prime_number - Checks if a number is a prime number
- * @n: number to check
- * Return: 1 if n is prime, 0 otherwise
+ * init_dog - Initializes a struct dog with the provided values
+ * @d: pointer to struct dog to initialize
+ * @name: name to set in the struct
+ * @age: age to set in the struct
+ * @owner: owner to set in the struct
+ *
+ * Description: This function initializes a struct dog with the
+ * provided name, age, and owner. It does not return a value.
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
