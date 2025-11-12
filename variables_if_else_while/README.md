@@ -1,16 +1,14 @@
-# variables_if_else_while
+# Index de variables_if_else_while
 
-## Files
+## Fichiers 📄
 
-| File Name                      | Type | Size       | Last Modified    |
-|--------------------------------|------|------------|------------------|
-| 0-positive_or_negative.c       | f    | 441 bytes  | 2025-11-10 17:36:45 |
-| 1-last_digit.c                 | f    | 490 bytes  | 2025-11-10 17:36:45 |
-| 2-print_alphabet.c             | f    | 302 bytes  | 2025-11-10 17:36:45 |
-| 3-print_alphabets.c            | f    | 380 bytes  | 2025-11-10 17:36:45 |
-| 4-print_alphabt.c              | f    | 388 bytes  | 2025-11-10 17:36:45 |
-| 5-print_numbers.c              | f    | 248 bytes  | 2025-11-10 17:36:45 |
-| 6-print_numberz.c              | f    | 248 bytes  | 2025-11-10 17:36:45 |
-| 7-print_tebahpla.c             | f    | 302 bytes  | 2025-11-10 17:36:45 |
-| 8-print_base16.c               | f    | 380 bytes  | 2025-11-10 17:36:45 |
-| 9-print_comb.c                 | f    | 279 bytes  | 2025-11-10 17:36:45 |
+- [0-positive_or_negative.c](0-positive_or_negative.c)
+- [1-last_digit.c](1-last_digit.c)
+- [2-print_alphabet.c](2-print_alphabet.c)
+- [3-print_alphabets.c](3-print_alphabets.c)
+- [4-print_alphabt.c](4-print_alphabt.c)
+- [5-print_numbers.c](5-print_numbers.c)
+- [6-print_numberz.c](6-print_numberz.c)
+- [7-print_tebahpla.c](7-print_tebahpla.c)
+- [8-print_base16.c](8-print_base16.c)
+- [9-print_comb.c](9-print_comb.c)
