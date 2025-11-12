@@ -3,14 +3,12 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - Concatenates two strings.
- * @s1: The first string to concatenate.
- * @s2: The second string to concatenate.
- * @n: The maximum number of bytes to take from s2.
+ * _calloc - Allocates memory for an array and initializes it to zero.
+ * @nmemb: The number of elements in the array.
+ * @size: The size of each element in bytes.
  *
- * Return: A pointer to the newly allocated space in memory
- *         containing the concatenated string.
- *         If malloc fails, the function returns NULL.
+ * Return: A pointer to the allocated memory initialized to zero.
+ *         If nmemb or size is 0, or if malloc fails, the function returns NULL.
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
