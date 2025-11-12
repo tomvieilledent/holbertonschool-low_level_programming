@@ -8,7 +8,8 @@
  * @size: The size of each element in bytes.
  *
  * Return: A pointer to the allocated memory initialized to zero.
- *         If nmemb or size is 0, or if malloc fails, the function returns NULL.
+ *         If nmemb or size is 0, or if malloc
+ *         fails, the function returns NULL.
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -24,7 +25,7 @@ arr = malloc(nmemb * size);
 if (arr == NULL)
 	return (NULL);
 
-for (i = 0; i <= nmemb; i++)
+for (i = 0; i < nmemb * size; i++)
 	arr[i] = 0;
 
 return (arr);
