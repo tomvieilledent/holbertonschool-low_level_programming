@@ -1,31 +1,33 @@
-# Index de pointers_arrays_strings
+# pointers_arrays_strings
 
-## Fichiers 📄
+## Files
 
-- [0-memset.c](0-memset.c)
-- [0-reset_to_98.c](0-reset_to_98.c)
-- [0-strcat.c](0-strcat.c)
-- [1-memcpy.c](1-memcpy.c)
-- [1-strncat.c](1-strncat.c)
-- [1-swap.c](1-swap.c)
-- [2-strchr.c](2-strchr.c)
-- [2-strlen.c](2-strlen.c)
-- [2-strncpy.c](2-strncpy.c)
-- [3-puts.c](3-puts.c)
-- [3-strcmp.c](3-strcmp.c)
-- [3-strspn.c](3-strspn.c)
-- [4-print_rev.c](4-print_rev.c)
-- [4-rev_array.c](4-rev_array.c)
-- [4-strpbrk.c](4-strpbrk.c)
-- [5-rev_string.c](5-rev_string.c)
-- [5-string_toupper.c](5-string_toupper.c)
-- [5-strstr.c](5-strstr.c)
-- [6-cap_string.c](6-cap_string.c)
-- [6-puts2.c](6-puts2.c)
-- [7-leet.c](7-leet.c)
-- [7-print_chessboard.c](7-print_chessboard.c)
-- [7-puts_half.c](7-puts_half.c)
-- [8-print_array.c](8-print_array.c)
-- [8-print_diagsums.c](8-print_diagsums.c)
-- [9-strcpy.c](9-strcpy.c)
-- [main.h](main.h)
+| File Name                      | Type | Size       | Last Modified    |
+|--------------------------------|------|------------|------------------|
+| 0-memset.c                     | f    | 497 bytes  | 2025-11-10 17:36:45 |
+| 0-reset_to_98.c                | f    | 237 bytes  | 2025-11-10 17:36:45 |
+| 0-strcat.c                     | f    | 682 bytes  | 2025-11-10 17:36:45 |
+| 1-memcpy.c                     | f    | 500 bytes  | 2025-11-10 17:36:45 |
+| 1-strncat.c                    | f    | 720 bytes  | 2025-11-10 17:36:45 |
+| 1-swap.c                       | f    | 239 bytes  | 2025-11-10 17:36:45 |
+| 2-strchr.c                     | f    | 534 bytes  | 2025-11-10 17:36:45 |
+| 2-strlen.c                     | f    | 238 bytes  | 2025-11-10 17:36:45 |
+| 2-strncpy.c                    | f    | 584 bytes  | 2025-11-10 17:36:45 |
+| 3-puts.c                       | f    | 451 bytes  | 2025-11-10 17:36:45 |
+| 3-strcmp.c                     | f    | 646 bytes  | 2025-11-10 17:36:45 |
+| 3-strspn.c                     | f    | 689 bytes  | 2025-11-10 17:36:45 |
+| 4-print_rev.c                  | f    | 688 bytes  | 2025-11-10 17:36:45 |
+| 4-rev_array.c                  | f    | 636 bytes  | 2025-11-10 17:36:45 |
+| 4-strpbrk.c                    | f    | 790 bytes  | 2025-11-10 17:36:45 |
+| 5-rev_string.c                 | f    | 630 bytes  | 2025-11-10 17:36:45 |
+| 5-string_toupper.c             | f    | 568 bytes  | 2025-11-10 17:36:45 |
+| 5-strstr.c                     | f    | 927 bytes  | 2025-11-10 17:36:45 |
+| 6-cap_string.c                 | f    | 827 bytes  | 2025-11-10 17:36:45 |
+| 6-puts2.c                      | f    | 502 bytes  | 2025-11-10 17:36:45 |
+| 7-leet.c                       | f    | 251 bytes  | 2025-11-10 17:36:45 |
+| 7-print_chessboard.c           | f    | 414 bytes  | 2025-11-10 17:36:45 |
+| 7-puts_half.c                  | f    | 695 bytes  | 2025-11-10 17:36:45 |
+| 8-print_array.c                | f    | 540 bytes  | 2025-11-10 17:36:45 |
+| 8-print_diagsums.c             | f    | 540 bytes  | 2025-11-10 17:36:45 |
+| 9-strcpy.c                     | f    | 475 bytes  | 2025-11-10 17:36:45 |
+| main.h                         | f    | 981 bytes  | 2025-11-10 17:36:45 |
