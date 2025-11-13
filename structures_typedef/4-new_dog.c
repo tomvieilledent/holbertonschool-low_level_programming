@@ -10,36 +10,23 @@
  * Return: Pointer to the duplicated string, or NULL if insufficient memory
  *         was available or if str is NULL.
  */
-
 char *_strdup(char *str)
-
 {
 	char *cpy;
-	int len = 0;
-	int i;
+	int len = 0, i;
 
-	if (str == NULL)
-	{
+	if (!str)
 		return (NULL);
-	}
 
-	while (str[len] != '\0')
-	{
+	while (str[len])
 		len++;
-	}
-	len++;
 
-	cpy = malloc(sizeof(char) * len);
-
-	if (cpy == NULL)
-	{
+	cpy = malloc(sizeof(char) * (len + 1)); /* +1 pour '\0' */
+	if (!cpy)
 		return (NULL);
-	}
 
 	for (i = 0; i < len; i++)
-	{
 		cpy[i] = str[i];
-	}
 
 	cpy[len] = '\0';
 
@@ -47,11 +34,12 @@ char *_strdup(char *str)
 }
 
 /**
- * print_dog - Prints the details of a struct dog.
- * @d: Pointer to the struct dog to be printed.
+ * new_dog - Creates a new dog struct with given name, age, and owner.
+ * @name: Name of the dog.
+ * @age: Age of the dog.
+ * @owner: Owner of the dog.
  *
- * This function prints the name, age, and owner of the dog.
- * If any element of the struct is NULL, it prints (nil) instead.
+ * Return: Pointer to the new dog struct, or NULL if allocation fails.
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -59,32 +47,31 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *newdog;
 
-/* Vérifie si name ou owner sont NULL */
+	/* Vérifie si name ou owner sont NULL */
 	if (!name || !owner)
 		return (NULL);
 
-/* Alloue de la mémoire a newdog. En cas d'echec free la mémoire */
+	/* Alloue de la mémoire à newdog */
 	newdog = malloc(sizeof(dog_t));
 	if (!newdog)
+		return (NULL);
+
+	/* Copie name et owner avec _strdup */
+	newdog->name = _strdup(name);
+	if (!newdog->name) /* Si échec, libère newdog */
 	{
 		free(newdog);
 		return (NULL);
 	}
 
-/* Alloue de la mémoire a newdog->name et newdog->owner. En cas d'echec free la mémoire */
-	newdog->name = malloc(sizeof(name));
-	newdog->owner = malloc(sizeof(owner));
-	if (!newdog->name || !newdog->owner)
+	newdog->owner = _strdup(owner);
+	if (!newdog->owner) /* Si échec, libère newdog->name et newdog */
 	{
-		free(newdog->owner);
 		free(newdog->name);
 		free(newdog);
 		return (NULL);
 	}
 
-/* copie les char de name et de owner */
-	newdog->name = _strdup(name);
-	newdog->owner = _strdup(owner);
 	newdog->age = age;
 
 	return (newdog);
