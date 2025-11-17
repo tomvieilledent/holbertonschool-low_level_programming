@@ -1,26 +1,14 @@
-#include "main.h"
+#include "function_pointers.h"
+#include <stddef.h>
 
 /**
- * _memcpy - Copies memory area
- * @dest: The destination memory area
- * @src: The source memory area
- * @n: The number of bytes to copy
+ * print_name - affiche un nom en utilisant une fonction passée en paramètre
+ * @name: le nom à afficher
+ * @f: pointeur vers une fonction qui prend un char* en paramètre
  *
- * Description: This function copies n bytes from the memory area
- * pointed to by src to the memory area pointed to by dest.
- *
- * Return: A pointer to the destination memory area (dest)
+ * Retour: Rien.
  */
-
-char *_memcpy(char *dest, char *src, unsigned int n)
-
+void print_name(char *name, void (*f)(char *))
 {
-	unsigned int i = 0;
-
-	while (i < n)
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	return (dest);
+	f(name);
 }
