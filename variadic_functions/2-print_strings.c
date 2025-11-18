@@ -25,6 +25,10 @@ if (n == 0)
 while (i < n)
 {
 charg = va_arg(args, char *);
+
+if (!charg)
+	return;
+
 printf("%s%s", charg, separator);
 i++;
 }
