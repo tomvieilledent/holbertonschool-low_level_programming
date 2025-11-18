@@ -19,6 +19,9 @@ char *charg;
 va_list args;
 va_start(args, n);
 
+if (n == 0)
+	return (0);
+
 while (i < n)
 {
 charg = va_arg(args, char *);
