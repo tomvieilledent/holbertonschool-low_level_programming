@@ -21,3 +21,4 @@
 | 📁 | [recursion](recursion/README.md) | Directory | - |
 | 📁 | [structures_typedef](structures_typedef/README.md) | Directory | - |
 | 📁 | [variables_if_else_while](variables_if_else_while/README.md) | Directory | - |
+| 📁 | [variadic_functions](variadic_functions/README.md) | Directory | - |
