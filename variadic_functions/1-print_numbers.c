@@ -2,7 +2,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_strings - Prints strings, followed by a new line.
+ * print_numbers - Prints strings, followed by a new line.
  * @separator: The string to be printed between the strings.
  * @n: The number of strings to print.
  * @...: The strings to be printed.
@@ -24,7 +24,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		num = va_arg(ap, int);
 		printf("%d", num);
-		if (separator != NULL)
+		if (separator != NULL && i != n - 1)
 			printf("%s", separator);
 	}
 	putchar('\n');
