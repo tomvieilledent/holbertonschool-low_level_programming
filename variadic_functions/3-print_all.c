@@ -31,7 +31,7 @@ int _strlen(const char *s)
 void print_all(const char *const format, ...)
 
 {
-	unsigned int i = 0;
+	int i = 0;
 	int print_int, print_char;
 	double print_float;
 	char *print_string;
