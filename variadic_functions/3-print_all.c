@@ -1,8 +1,10 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
+#include <string.h>
+#include <stdio.h>
 
 /**
- * print_strings - Prints strings, followed by a new line.
+ * print_all - Prints strings, followed by a new line.
  * @separator: The string to be printed between the strings.
  * @n: The number of strings to print.
  * @...: The strings to be printed.
@@ -13,45 +15,60 @@
 void print_all(const char *const format, ...)
 
 {
-	int i;
-	int pr_int;
-	double pr_float;
-	char *pr_string;
+	unsigned int i = 0;
+	int print_int, print_char;
+	double print_float;
+	char *print_string;
 
 	va_list ap;
 
 	va_start(ap, format);
 
-	while (format != NULL && i < _strlen(format))
+	while (format != NULL && i < strlen(format))
 	{
 		switch (format[i])
 		{
 		case 's':
-			pr_string = va_arg(ap, char *);
-			if (pr_string == NULL)
-				printf("(nil)");
+		{
+			print_string = va_arg(ap, char *);
+			if (print_string == NULL)
 			{
-				printf("%s", pr_string);
+				printf("(nil)");
 				break;
 			}
+				printf("%s", print_string);
+				break;
+			
+		}
 		case 'i':
-			pr_int = va_arg(ap, int);
-			printf("%d", pr_int);
+		{	
+			print_int = va_arg(ap, int);
+			printf("%d", print_int);
 			break;
+		}
+
 		case 'c':
-			pr_int = va_arg(ap, int);
-			printf("%c", pr_int);
+		{
+			print_char = va_arg(ap, int);
+			printf("%c", print_char);
 			break;
+		}
+
 		case 'f':
-			pr_float = va_arg(ap, double);
-			printf("%f", pr_float);
+		{
+			print_float = va_arg(ap, double);
+			printf("%f", print_float);
 			break;
+		}
+
 		default:
+		{
 			i++;
 			continue;
 		}
+		}
 
-		if (i + 1 < _strlen(format))
+		if (i + 1 < strlen(format))
 			printf(", ");
 		i++;
 	}
