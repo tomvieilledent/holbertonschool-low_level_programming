@@ -4,6 +4,22 @@
 #include <stdio.h>
 
 /**
+ * _strlen - returns the length of a string
+ * @s: the string to measure
+ *
+ * Return: the length of the string
+ */
+
+int _strlen(const char *s)
+{
+	int l = 0;
+
+	while (s[l] != '\0')
+		l++;
+	return (l);
+}
+
+/**
  * print_all - Prints strings, followed by a new line.
  * @separator: The string to be printed between the strings.
  * @n: The number of strings to print.
@@ -24,7 +40,7 @@ void print_all(const char *const format, ...)
 
 	va_start(ap, format);
 
-	while (format != NULL && i < strlen(format))
+	while (format != NULL && i < _strlen(format))
 	{
 		switch (format[i])
 		{
@@ -68,7 +84,7 @@ void print_all(const char *const format, ...)
 		}
 		}
 
-		if (i + 1 < strlen(format))
+		if (i + 1 < _strlen(format))
 			printf(", ");
 		i++;
 	}
