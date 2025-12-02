@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * add_node_end - Adds a new node at the beginning of a list_t list.
+ * add_node_end - Adds a new node at end of a list_t list.
  * @head: Double pointer to the head of the list_t list.
  * @str: String to be duplicated and stored in the new node.
  *
